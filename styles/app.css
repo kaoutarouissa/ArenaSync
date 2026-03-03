@@ -1,0 +1,20 @@
+.myDiv{
+    background-color: pink;
+    font-family: 'Arial, sans-serif';
+}
+.Head{
+    background-color: blueviolet;
+    display: flex;
+    /* width: 100%; */
+}
+.avatar{
+    width: 50px;
+    /* height: 16px; */
+}
+img{
+    border-radius: 60%;
+}
+/* body{
+    margin:0;
+} */
+ 
