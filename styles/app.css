@@ -1,20 +1,125 @@
-.myDiv{
-    background-color: pink;
-    font-family: 'Arial, sans-serif';
+/* Styles général */
+
+
+.myDiv {
+  background-color: pink;
+  font-family: Arial, sans-serif;
 }
-.Head{
-    background-color: blueviolet;
+.divparent{
     display: flex;
-    /* width: 100%; */
+    justify-content: space-between;
+    width: 100%;
+    
 }
-.avatar{
-    width: 50px;
-    /* height: 16px; */
+/* input{
+    width: 50%;
+    border-radius: 40px;
+    padding: 20px;
+    
 }
-img{
-    border-radius: 60%;
-}
-/* body{
-    margin:0;
+input .icon{
+     position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 } */
- 
+ .input-wrapper {
+  position: relative;
+  /* width: 200px; */
+  width: 50%;
+}
+
+.input-wrapper input {
+    padding: 10px;
+  width: 100%;
+  padding-left: 30px; 
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor:pointer;
+  width: 20px;
+
+  
+}
+.Head {
+  background-color: #4636EA;
+   background: linear-gradient(to bottom, #4636EA, white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; 
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.image {
+  display: flex;
+  gap: 40px;
+  padding-top: 25px;
+}
+.cardiv{
+    border-radius: 20px;
+    background-color: white;
+    padding: 15px;
+}
+.div1{
+    background-color: aqua;
+    display: flex;
+}
+.imgcard{
+    border-radius: 50%;
+}
+@media (max-width: 768px) {
+    .divparent{
+        align-items: center;
+
+    }
+    /* input{
+        width:40px;
+} */
+
+    .input-wrapper {
+        width: 80%;
+        margin-left: -25px; 
+        
+    }
+  .Head {
+    flex-direction: flex;
+    padding: 15px;
+  }
+  .Head h1{
+    font-size: 16px;
+    padding-top: 20px;
+    
+  }
+
+  .image {
+    flex-direction: flex;
+    gap: 15px;
+    padding-top: 15px;
+  }
+
+  .avatar {
+    width: 45px;
+    height: 45px;
+  }
+}
