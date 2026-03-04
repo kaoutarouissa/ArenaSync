@@ -66,7 +66,11 @@ export function AffichData(){
                 </div>
 
                 <div className="divparticipant"><img src={location} className="avatar" alt={t.location} />{t.location}</div>
-              </div> ))) : 'DATA NOT FOUND'}
+              </div> ))) :  <div className="loader-wrapper">
+  <div className="spinner"></div><div>Loading tournaments.....</div>
+</div>
+              
+              }
           </div><footer><div className="divfooter"><img className="iconFooter" src={home} alt="home" /><span>Home</span></div>
           <div className="divfooter"><img className="iconFooter" src={list} alt="list" /><span>Tournament</span></div>
           <div className="divfooter"><img className="iconFooter" src={user} alt="profil" /><span>Profil</span></div>
