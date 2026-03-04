@@ -1,7 +1,8 @@
 
 // src/data/tournamentDB.js
 import shuttle from "../assets/images/Badminton.png";
-
+import basketball from "../assets/images/game.png"
+import boxing from "../assets/images/boxing.png"
 export const tournamentData = [
   {
     id: "t1",
@@ -24,6 +25,7 @@ export const tournamentData = [
   },
   {
     id: "t2",
+    image:basketball,
     title: "Hoops Championship",
     sport: "Basketball",
     status: "Upcoming", // UtilisÃ© pour la couleur du StatusBadge (ex: primary/blue)
@@ -37,6 +39,7 @@ export const tournamentData = [
   },
   {
     id: "t3",
+    image:boxing,
     title: "Ring Masters League",
     sport: "Boxing",
     status: "Pending",

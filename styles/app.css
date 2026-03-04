@@ -2,8 +2,11 @@
 
 
 .myDiv {
-  background-color: pink;
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
 }
 .divparent{
     display: flex;
@@ -11,19 +14,7 @@
     width: 100%;
     
 }
-/* input{
-    width: 50%;
-    border-radius: 40px;
-    padding: 20px;
-    
-}
-input .icon{
-     position: absolute;
-  left: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-} */
+
  .input-wrapper {
   position: relative;
   /* width: 200px; */
@@ -63,12 +54,33 @@ input .icon{
 }
 
 .avatar {
-  width: 55px;
-  height: 55px;
+  
+  background-color: pink;
+}
+.spancercle{
+  width: 5px;
+  height: 5px;         
+  /* font-size: 90px; */
+  border-radius: 50%;
+  background-color: black;
+  
+}
+.divparticipant{
+  display: flex;
+  align-items: center;
+  /* background-color: gray; */
+  gap: 10px;
+
+}
+.divprinc{
+  background-color: blue;
+  display: flex;
+  gap: 12px;
 }
 
 img {
   border-radius: 50%;
+
 }
 
 .image {
@@ -80,13 +92,42 @@ img {
     border-radius: 20px;
     background-color: white;
     padding: 15px;
-}
-.div1{
-    background-color: aqua;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+.cardiv img{
+    width: 30px;
+  height: 30px;
+}
+div .myimage{
+  width: 50px;
+  height: 50px;
+  
+}
+
+.div1{
+
+    display: flex;
+    gap: 20px;
+}
+
 .imgcard{
     border-radius: 50%;
+    padding: 25px;
+   
+}
+.divstatus{
+  /* background-color: black; */
+  border-radius: 30px;
+  padding: 4px;
+  width: 50%;
+  text-align: center;
+  /* color: white */
+  box-shadow:0 4px 6px rgba(0,0,0,0.3) ;
+  border: solid 1px;
+  
 }
 @media (max-width: 768px) {
     .divparent{
