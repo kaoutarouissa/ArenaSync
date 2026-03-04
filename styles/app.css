@@ -7,6 +7,11 @@
   flex-direction: column;
   gap: 30px;
   padding: 30px;
+  padding-bottom: 100px; 
+ 
+}
+.icon{
+  box-shadow: none;
 }
 .divparent{
     display: flex;
@@ -53,9 +58,10 @@
   flex-wrap: wrap; 
 }
 
-.avatar {
-  
-  background-color: pink;
+.image .avatar {
+   width: 40px;
+  height: 40px; 
+  cursor: pointer;
 }
 .spancercle{
   width: 5px;
@@ -68,18 +74,19 @@
 .divparticipant{
   display: flex;
   align-items: center;
-  /* background-color: gray; */
   gap: 10px;
 
 }
 .divprinc{
-  background-color: blue;
+ 
   display: flex;
   gap: 12px;
 }
 
 img {
-  border-radius: 50%;
+  border-radius: 30%;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.2)
+  
 
 }
 
@@ -129,14 +136,45 @@ div .myimage{
   border: solid 1px;
   
 }
+
+footer{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  right: 0;
+  box-shadow:0 4px 4px 6px rgba(0,0,0,0.1) ;
+  background-color:white;
+  border-radius: 50px;
+  padding: 10px;
+  width: 90%;
+  
+ 
+}
+.divfooter{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.divfooter:hover{
+  background-color: #4636EA;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.iconFooter{
+  width: 30px;
+  height: 30px;
+}
 @media (max-width: 768px) {
     .divparent{
         align-items: center;
 
     }
-    /* input{
-        width:40px;
-} */
+
 
     .input-wrapper {
         width: 80%;
@@ -162,5 +200,11 @@ div .myimage{
   .avatar {
     width: 45px;
     height: 45px;
+  }
+  footer div span{
+    display: none;
+  }
+  .divparticipant{
+    font-size: small;
   }
 }

@@ -6,6 +6,10 @@ import user from "../assets/images/user.png";
 import trophy from "../assets/images/trophy.png";
 import date from "../assets/images/date.png";
 import location from "../assets/images/location.png";
+import home from "../assets/images/home.png";
+import list from "../assets/images/list.png";
+
+
 import Statusbadge from "./StatusBadge"
 export function AffichData(){
    return (
@@ -23,6 +27,8 @@ export function AffichData(){
               <img className="icon" src={recherche}/>
             </div>
           </header>
+
+          
           <div className="myDiv">
             {/* <h1>Tournaments</h1> */}
             <div className="loader"></div>
@@ -31,7 +37,7 @@ export function AffichData(){
                 key={t.id}
              ><div className="div1">
               <div className="imgcard">
-    <img src={t.image} alt={t.title} className="myimage" />          </div>
+    <img src={t.image} alt={t.title} className="myimage" />     </div>
               <div className="statustitle">
                 <h2>{t.title}</h2>
              
@@ -61,7 +67,10 @@ export function AffichData(){
 
                 <div className="divparticipant"><img src={location} className="avatar" alt={t.location} />{t.location}</div>
               </div> ))) : 'DATA NOT FOUND'}
-          </div>
+          </div><footer><div className="divfooter"><img className="iconFooter" src={home} alt="home" /><span>Home</span></div>
+          <div className="divfooter"><img className="iconFooter" src={list} alt="list" /><span>Tournament</span></div>
+          <div className="divfooter"><img className="iconFooter" src={user} alt="profil" /><span>Profil</span></div>
+          </footer>
         </>
       );
 
