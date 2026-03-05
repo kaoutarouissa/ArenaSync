@@ -10,11 +10,10 @@ function TournamentDetail() {
   const { id } = useParams();
 
 const tournament = tournamentData.find((t) => t.id == id);
-  if (!tournament) {
-    return <div>Tournament not found</div>;
-  }
+
   return (
     <div >
+        <div className="cardParent">
         
         <header className="Head2">
             <div className="topdivHeader">
@@ -53,6 +52,34 @@ const tournament = tournamentData.find((t) => t.id == id);
                               <div className="divparticipant"><img src={location} className="avatar" alt={tournament.location} />{tournament.location}</div>
                               </div>  
       </header>
+
+
+{/* div pour participates */}
+<div className="listParticipantes">
+    <h1>Participantes&#40;{tournament.participantsCount}&#41;</h1>
+    <div className="gridList">
+         <div className="boxinfo">
+               {tournament.participants.map((p) => (
+              <div key={p.id} className="participant-card">
+                <img
+                  src={p.avatar}
+                  alt={p.name}
+                  className="participant-avatar"
+                />
+                <div className="participant-info">
+                  <p className="participant-name">{p.name}</p>
+                  <p className={`participant-status ${p.status.toLowerCase()}`}>
+                    {p.status}
+                  </p>
+                </div>
+              </div>
+            ))}
+         </div>
+       
+        </div>
+      
+    </div>
+</div>
     </div>
   );
 }

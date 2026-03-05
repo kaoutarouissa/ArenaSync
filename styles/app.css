@@ -142,6 +142,11 @@ img {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    cursor: pointer;
+}
+.cardiv:hover{
+      box-shadow:0 4px 6px rgba(0,0,0,1);
+
 }
 .cardiv img{
     width: 30px;
@@ -238,7 +243,67 @@ footer{
   height: 40px;
   animation: spin 1s linear infinite;
 }
+.cardParent{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 300px;
+}
+.boxinfo{
+    display: grid;
+    /* display: flex; */
+  grid-template-columns: repeat(2, 2fr); 
+  gap: 70px;
+  margin-top: 10px;
+  margin-bottom:  40px;
+  
+}
+.participant-card{
+  background-color: white;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  box-shadow: 0 2px 4px black;
+  border-radius: 40px;
 
+}
+.listParticipantes{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* box-shadow: 0 2px 4px black;
+  background-color: white; */
+}
+.participant-card {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.participant-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.participant-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.participant-status.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.participant-status.confirmed {
+  color: green;
+  font-weight: bold;
+}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -286,5 +351,9 @@ footer{
     display: flex;
     justify-content: space-between;
     gap: 55px;
+  }
+  .boxinfo{
+    padding:0 30px;
+    
   }
 }
