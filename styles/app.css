@@ -66,6 +66,7 @@
   /* justify-content: space-between; */
   padding: 20px;
   gap: 19px;
+  height: 250px;
 }
 #symbole{
   font-weight: bold;
@@ -96,8 +97,9 @@
   cursor: pointer;
 }
 .divparticipant .avatar{
-     width: 40px;
-  height: 40px; 
+     width: 30px;
+  height: 30px; 
+  
 }
 .spancercle{
   width: 5px;
@@ -113,6 +115,7 @@
   gap: 10px;
 
 }
+
 .divprinc{
  
   display: flex;
@@ -213,6 +216,17 @@ footer{
   align-items: center;
   gap: 25px;
   
+}
+.carddetail{
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0 2px gray;
+  /* height: 500px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 15px;
+  padding: 20px;
 }
 
 
