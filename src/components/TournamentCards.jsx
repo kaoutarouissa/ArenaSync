@@ -8,10 +8,11 @@ import date from "../assets/images/date.png";
 import location from "../assets/images/location.png";
 import home from "../assets/images/home.png";
 import list from "../assets/images/list.png";
-
+import { useNavigate } from "react-router-dom";
 
 import Statusbadge from "./StatusBadge"
 export function AffichData(){
+  const navigate = useNavigate();
    return (
     <>
      <header className="Head">
@@ -30,10 +31,8 @@ export function AffichData(){
 
           
           <div className="myDiv">
-            {/* <h1>Tournaments</h1> */}
-            <div className="loader"></div>
             {tournamentData.length > 0 ? (tournamentData.map((t) => (//consit si data vide
-              <div className="cardiv"
+              <div className="cardiv" onClick={()=>navigate(`/Pagedetailecard/${t.id}`)}
                 key={t.id}
              ><div className="div1">
               <div className="imgcard">
@@ -67,7 +66,7 @@ export function AffichData(){
 
                 <div className="divparticipant"><img src={location} className="avatar" alt={t.location} />{t.location}</div>
               </div> ))) :  <div className="loader-wrapper">
-  <div className="spinner"></div><div>Loading tournaments.....</div>
+  <div className="spinner"></div><div>Loading tournaments...</div>
 </div>
               
               }

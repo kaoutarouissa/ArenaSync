@@ -1,13 +1,18 @@
 import React from "react";
-
-
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import TournamentDetail from "./components/pageDetail"
 import { AffichData} from './components/TournamentCards'
 
 
 function App() {
-  return <>
-  <AffichData/>
-  </>
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AffichData />} />
+        <Route path="/Pagedetailecard/:id" element={<TournamentDetail />} />
+      </Routes>
+    </BrowserRouter>
+  );
     
      
 }
