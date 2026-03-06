@@ -1,39 +1,35 @@
 /* Styles général */
 
-
 .myDiv {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding: 30px;
-  padding-bottom: 100px; 
- 
+  padding-bottom: 100px;
 }
-.icon{
+.icon {
   box-shadow: none;
 }
-.divparent{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    
+.divparent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
- .input-wrapper {
+.input-wrapper {
   position: relative;
   /* width: 200px; */
   width: 50%;
 }
 
 .input-wrapper input {
-    padding: 10px;
+  padding: 10px;
   width: 100%;
-  padding-left: 30px; 
+  padding-left: 30px;
   height: 35px;
   border-radius: 20px;
   border: 1px solid #ccc;
-  
 }
 
 .input-wrapper .icon {
@@ -41,26 +37,24 @@
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  cursor:pointer;
+  cursor: pointer;
   width: 20px;
-
-  
 }
 .Head {
-  background-color: #4636EA;
-   background: linear-gradient(to bottom, #4636EA, white);
+  background-color: #4636ea;
+  background: linear-gradient(to bottom, #4636ea, white);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
   align-items: center;
   gap: 30px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
-.Head2{
+.Head2 {
   /* align-items: center; */
-    background-color: #4636EA;
-   background: linear-gradient(to bottom, #4636EA, white);
+  background-color: #4636ea;
+  background: linear-gradient(to bottom, #4636ea, white);
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
@@ -68,17 +62,16 @@
   gap: 19px;
   height: 250px;
 }
-#symbole{
+#symbole {
   font-weight: bold;
   font-size: 35px;
   cursor: pointer;
   padding-left: 20px;
 }
-.h1detail{
-  
+.h1detail {
   font-weight: normal;
 }
-.topdivHeader{
+.topdivHeader {
   display: flex;
   color: white;
   /* font-weight: bold; */
@@ -92,41 +85,35 @@
 }
 
 .image .avatar {
-   width: 40px;
-  height: 40px; 
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 }
-.divparticipant .avatar{
-     width: 30px;
-  height: 30px; 
-  
+.divparticipant .avatar {
+  width: 30px;
+  height: 30px;
 }
-.spancercle{
+.spancercle {
   width: 5px;
-  height: 5px;         
+  height: 5px;
   /* font-size: 90px; */
   border-radius: 50%;
   background-color: black;
-  
 }
-.divparticipant{
+.divparticipant {
   display: flex;
   align-items: center;
   gap: 10px;
-
 }
 
-.divprinc{
- 
+.divprinc {
   display: flex;
   gap: 12px;
 }
 
 img {
   border-radius: 30%;
-   box-shadow: 0 4px 8px rgba(0,0,0,0.2)
-  
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .image {
@@ -134,55 +121,49 @@ img {
   gap: 40px;
   padding-top: 25px;
 }
-.cardiv{
-    border-radius: 20px;
-    background-color: white;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    cursor: pointer;
+.cardiv {
+  border-radius: 20px;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
 }
-.cardiv:hover{
-      box-shadow:0 4px 6px rgba(0,0,0,1);
-
+.cardiv:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
 }
-.cardiv img{
-    width: 30px;
+.cardiv img {
+  width: 30px;
   height: 30px;
 }
-div .myimage{
+div .myimage {
   width: 50px;
   height: 50px;
-  
 }
 
-.div1{
-
-    display: flex;
-    gap: 20px;
+.div1 {
+  display: flex;
+  gap: 20px;
 }
 
-.imgcard{
-    border-radius: 50%;
-    padding: 25px;
-   
+.imgcard {
+  border-radius: 50%;
+  padding: 25px;
 }
-.divstatus{
+.divstatus {
   /* background-color: black; */
   border-radius: 30px;
   padding: 4px;
   width: 50%;
   text-align: center;
   /* color: white */
-  box-shadow:0 4px 6px rgba(0,0,0,0.3) ;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   border: solid 1px;
-  
 }
 
-footer{
-
+footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -191,25 +172,23 @@ footer{
   left: 50%;
   transform: translatex(-50%);
   right: 0;
-  box-shadow:0 4px 4px 6px rgba(0,0,0,0.1) ;
-  background-color:white;
+  box-shadow: 0 4px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
   border-radius: 50px;
   padding: 10px;
   width: 90%;
-  
- 
 }
-.divfooter{
+.divfooter {
   display: flex;
   gap: 10px;
   padding: 10px;
 }
-.divfooter:hover{
-  background-color: #4636EA;
+.divfooter:hover {
+  background-color: #4636ea;
   border-radius: 40px;
   cursor: pointer;
 }
-.iconFooter{
+.iconFooter {
   width: 30px;
   height: 30px;
 }
@@ -220,9 +199,8 @@ footer{
   justify-content: center;
   align-items: center;
   gap: 25px;
-  
 }
-.carddetail{
+.carddetail {
   border-radius: 50px;
   background-color: white;
   box-shadow: 0 2px gray;
@@ -234,46 +212,46 @@ footer{
   padding: 20px;
 }
 
-
 .spinner {
   border: 6px solid #f3f3f3;
-  border-top: 6px solid #4636EA; 
-  border-radius: 50%; 
+  border-top: 6px solid #4636ea;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   animation: spin 1s linear infinite;
 }
-.cardParent{
+.cardParent {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
   gap: 300px;
 }
-.boxinfo{
-    display: grid;
-    /* display: flex; */
-  grid-template-columns: repeat(2, 2fr); 
+.boxinfo {
+  display: grid;
+  /* display: flex; */
+  grid-template-columns: repeat(2, 2fr);
   gap: 70px;
   margin-top: 10px;
-  margin-bottom:  40px;
-  
+  margin-bottom: 40px;
+  margin-left: 50px;
 }
-.participant-card{
+.participant-card {
   background-color: white;
   display: flex;
   gap: 10px;
   justify-content: center;
   box-shadow: 0 2px 4px black;
   border-radius: 40px;
-
 }
-.listParticipantes{
+.listParticipantes {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+  /* text-align: center; */
   /* box-shadow: 0 2px 4px black;
   background-color: white; */
+  /* background-color: yellow; */
 }
 .participant-card {
   display: flex;
@@ -304,31 +282,43 @@ footer{
   color: green;
   font-weight: bold;
 }
+.msgnoId {
+  text-align: center;
+  background-color: #4636ea;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  box-shadow: 0 2px 4px gray;
+  padding: 30px;
+  border-radius: 30px;
+  color: white;
+  /* border: solid; */
+}
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media (max-width: 768px) {
-    .divparent{
-        align-items: center;
+  .divparent {
+    align-items: center;
+  }
 
-    }
-
-
-    .input-wrapper {
-        width: 80%;
-        margin-left: -25px; 
-        
-    }
+  .input-wrapper {
+    width: 80%;
+    margin-left: -25px;
+  }
   .Head {
     flex-direction: flex;
     padding: 15px;
   }
-  .Head h1{
+  .Head h1 {
     font-size: 16px;
     padding-top: 20px;
-    
   }
 
   .image {
@@ -341,19 +331,24 @@ footer{
     width: 45px;
     height: 45px;
   }
-  footer div span{
+  footer div span {
     display: none;
   }
-  .divparticipant{
+  .divparticipant {
     font-size: small;
   }
-  .topdivHeader{
+  .topdivHeader {
     display: flex;
     justify-content: space-between;
     gap: 55px;
   }
-  .boxinfo{
-    padding:0 30px;
-    
+
+  .listParticipantes {
+    text-align: center;
+  }
+  .boxinfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 30px;
   }
 }
