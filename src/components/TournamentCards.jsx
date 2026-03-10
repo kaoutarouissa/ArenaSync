@@ -11,7 +11,7 @@ import list from "../assets/images/list.png";
 import { useNavigate } from "react-router-dom";
 
 import Statusbadge from "./StatusBadge"
-export function AffichData(){
+export function AffichData(){//parent call chil status badge
   const navigate = useNavigate();
    return (
     <>
