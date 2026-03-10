@@ -145,7 +145,13 @@ div .myimage {
 
 .div1 {
   display: flex;
-  gap: 20px;
+  /* background-color: pink; */
+}
+.containerbox{
+display: flex;
+justify-content: space-between;
+gap: 19px;
+
 }
 
 .imgcard {
@@ -155,12 +161,24 @@ div .myimage {
 .divstatus {
   /* background-color: black; */
   border-radius: 30px;
-  padding: 4px;
+  padding: 10px;
   width: 50%;
   text-align: center;
   /* color: white */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   border: solid 1px;
+}
+.btnregister{
+    background-color: #CBD5E0; /* Vert moderne */
+  color: black;
+  font-weight: bold;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+   border-radius: 30px;
+
 }
 
 footer {

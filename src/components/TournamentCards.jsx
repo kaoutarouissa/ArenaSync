@@ -39,8 +39,10 @@ export function AffichData(){//parent call chil status badge
     <img src={t.image} alt={t.title} className="myimage" />     </div>
               <div className="statustitle">
                 <h2>{t.title}</h2>
-             
-                  <Statusbadge status={t.status}/></div>
+             <div className="containerbox">
+                  <button className="btnregister">Register</button>
+                  <Statusbadge status={t.status}/>
+                  </div></div>
                 </div>
     
     
