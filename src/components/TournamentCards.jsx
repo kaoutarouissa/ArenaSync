@@ -52,6 +52,7 @@ function TournamentCard({ t, navigate }) {//composat resois de props t:pour data
     setTeam("");
     setLevel("");
   };
+
   
   return (
     <div
