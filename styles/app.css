@@ -311,6 +311,30 @@ footer {
   color: white;
   /* border: solid; */
 }
+.confirmedbtn{
+  border-radius: 40px;
+  color: black;
+  /* background-color: pink; */
+  border: 1px solid black;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 19px;
+  /* border: 2px solid red; */
+  padding: 20px;
+  margin: 10px;
+  /* box-shadow: 0 2px gray; */
+   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+form input{
+  border-radius: 20px;
+  padding: 10px;
+}
+.divbtuncenter{
+  text-align: center;
+}
 
 @keyframes spin {
   0% {

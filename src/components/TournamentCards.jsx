@@ -129,7 +129,7 @@ function TournamentCard({ t, navigate }) {//composat resois de props t:pour data
           />
           <input
             type="text"
-            placeholder="Team (optional)"
+            placeholder="Team"
             value={team}
             onChange={(e) => setTeam(e.target.value)}
           />
@@ -139,13 +139,15 @@ function TournamentCard({ t, navigate }) {//composat resois de props t:pour data
             value={level}
             onChange={(e) => setLevel(e.target.value)}
           />
-          <button type="submit" disabled={!canSubmit}>
+          <div className="divbtuncenter">
+          <button className="confirmedbtn" type="submit" disabled={!canSubmit}>
             Confirm registration
-          </button>
+          </button></div>
           {!canSubmit && (
-            <p style={{ color: "red" }}>
+            <p style={{ color: "red"}}>
               Name must have at least 3 characters.
             </p>
+            
           )}
         </form>
       )}
