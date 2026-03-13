@@ -53,7 +53,6 @@ function TournamentCard({ t, navigate }) {//composat resois de props t:pour data
     setLevel("");
   };
   return (
-    
     <div
       className="cardiv"
       onClick={() => navigate(`/Pagedetailecard/${t.id}`)}
