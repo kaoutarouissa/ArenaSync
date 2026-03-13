@@ -23,7 +23,8 @@ function TournamentCard({ t, navigate }) {//composat resois de props t:pour data
 
   const participantCount = participants.length; // nombre de partic
   const canSubmit = name.trim().length >= 3;// trim reject espase donc cansubmit soit fiha minim 3lettre
-
+// const tamcondi=team.trim().length>=3
+const canSubmitForm = canSubmit && team.trim().length > 3 && level.trim().length > 0;
   const handleRegisterClick = (e) => {
     e.stopPropagation(); // por eviter click ela div parent  ,
     setShowRegisterForm((prev) => !prev);// prev ex etat('false') !prev est le contraire
@@ -32,7 +33,7 @@ function TournamentCard({ t, navigate }) {//composat resois de props t:pour data
   const handleRegisterSubmit = (e) => {
     e.preventDefault();//eviter reload du page
     if (!canSubmit) return; //si <3 validation dont work
-
+// if (!tamcondi) return
     const newParticipant = {
       id: `u${Date.now()}`,
       name: name.trim(),//efacer lespases
@@ -140,10 +141,10 @@ function TournamentCard({ t, navigate }) {//composat resois de props t:pour data
             onChange={(e) => setLevel(e.target.value)}
           />
           <div className="divbtuncenter">
-          <button className="confirmedbtn" type="submit" disabled={!canSubmit}>
+          <button className="confirmedbtn" type="submit" disabled={!canSubmitForm}>
             Confirm registration
           </button></div>
-          {!canSubmit && (
+          {!canSubmitForm && (
             <p style={{ color: "red"}}>
               Name must have at least 3 characters.
             </p>
